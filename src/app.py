@@ -143,7 +143,7 @@ def processar(pasta):
         min_prc = str(round(stack_prc.min(), 2))
         min_prc = min_prc.replace(".", ",")
         media_prc = str(round(stack_prc.mean(), 2))
-        media_prc = media_pra.replace(".", ",")
+        media_prc = media_prc.replace(".", ",")
 
         # máximos adjacentes
         max_adj_a = max([max_prb, max_prc])
@@ -206,7 +206,7 @@ def processar(pasta):
                                          "Máxima Adj.\n"
                                          "Temp. atmosférica", font=("Arial", 10), justify=RIGHT)
         label_linhas.grid(row=1, column=0, padx=10, pady=10)
-        grupo.place(anchor="c", relx=.5, rely=.5)
+        grupo.place(anchor="center", relx=.5, rely=.5)
     else:
         tkmsg.showwarning(parent=app, title="Aviso!", message='Esta pasta não parece conter os arquivos desejados, com'
                                                       ' os nomes pré-definidos ("imagem 1.csv", "imagem 2.csv", etc). Favor verificar.')
